@@ -1,0 +1,38 @@
+.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16;
+    line-height: 20px;
+}
+
+.header {
+
+}
+
+.main {
+
+}
+
+.main_recipes {
+
+}
+
+.main_menu {
+
+}
+
+.main_reservation {
+
+}
+
+.main_about {
+
+}
+
+.footer {
+
+}
