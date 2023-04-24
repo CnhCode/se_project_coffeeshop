@@ -1,44 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Coffee in the Practicum library">
-    <meta name="author" content="Christopher Horn">
-    <meta name="keywords" content="see, search engine optimization, coffee, library">
-    <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="./pages/index.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <title>Coffee Shop</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Christopher Horn" />
+    <meta
+      name="description"
+      content="practicum bootcamp programming and coding"
+    />
+    <meta name="keywords" content="practicum bootcamp programming and coding" />
+    <title>Christopher's Coffee Shop</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="page">
-        Testing...
-        <header></header>
-        <header class="header">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffee_shop.svg"
+            alt="Practicum coffee shop logo"
+            class="logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="#nav__menu" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="#nav__recipes" class="nav__link">Recipes</a>
+            </li>
+            <li>
+              <a href="#nav__reservation" class="nav__link">Book a table</a>
+            </li>
+            <li>
+              <a href="#nav__about" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty coffee</span>in the
+          Practicum Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Inside coffee shop"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div class="header__paragraph">
+            <div class="header__paragraph_hours">
+              <p class="header__paragraph_hours_box">Hours:</p>
+              <p class="header__paragraph_hours_box">
+                Monday - Friday (10:00 - 19:00)
+              </p>
+              <p class="header__paragraph_hours_box">
+                Saturday - Sunday (11:00 - 18:00)
+              </p>
+            </div>
+            <div class="header__paragraph_address">
+              <p class="header__paragraph_hours_box">
+                200 Success Avenue, The Town of Practicum
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="menu"></section>
+        <section class="recipes">
+          <h1 class="recipes__title">Recipes</h1>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <div class="recipe__videos_box1">
+              <iframe
+                class="recipes__iframe"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span>
+                <span>~5:12 min</span>
+              </p>
+            </div>
+            <div class="recipe__videos_box2">
+              <iframe
+                class="recipes__iframe"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>French press recipe</span>
+                <span>~3:33 min</span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="reservation"></section>
+        <section class="about"></section>
+      </main>
 
-        </header>
-        <main class="content">
-            <section class="recipes">
-
-            </section>
-            <section class="menu">
-
-            </section>
-            <section class="reservation">
-
-            </section>
-            <section class="about">
-
-            </section>
-        </main>
-        <footer class="footer">
-
-        </footer>
+      <footer class="footer"></footer>
     </div>
-</body>
+  </body>
 </html>
