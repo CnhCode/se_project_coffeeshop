@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Christopher Horn" />
+    <meta name="author" content="Chris Kapano" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, web development" />
     <meta
       name="description"
-      content="practicum bootcamp programming and coding"
+      content="This a document that provides infomration on Chris's Coffe Shop."
     />
-    <meta name="keywords" content="practicum bootcamp programming and coding" />
-    <title>Christopher's Coffee Shop</title>
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
+
+    <title>Coffee Shop</title>
   </head>
   <body>
     <div class="page">
@@ -27,26 +29,26 @@
         <nav class="nav">
           <img
             src="./images/logo_coffee_shop.svg"
-            alt="Practicum coffee shop logo"
-            class="logo"
+            alt="Coffee Shop Logo"
+            class="nav__logo"
           />
           <ul class="nav__links">
             <li>
-              <a href="#nav__menu" class="nav__link">Menu</a>
+              <a href="#recipes-page" class="nav__link">Recipes</a>
             </li>
             <li>
-              <a href="#nav__recipes" class="nav__link">Recipes</a>
+              <a href="#reservation-page" class="nav__link">Book a table</a>
             </li>
             <li>
-              <a href="#nav__reservation" class="nav__link">Book a table</a>
+              <a href="#menu-page" class="nav__link">Menu</a>
             </li>
             <li>
-              <a href="#nav__about" class="nav__link">Contacts</a>
+              <a href="#contacts-page" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span-accent">Specialty coffee</span>in the
+          <span class="header__span-accent">Specialty coffee</span> in the
           Practicum Library
         </h1>
         <p class="header__description">
@@ -55,74 +57,129 @@
         </p>
         <img
           src="./images/inside_coffee_shop.png"
-          alt="Inside coffee shop"
+          alt="Illustration 'Inside the Coffee Shop'"
           class="header__image"
         />
         <div class="header__footer">
-          <div class="header__paragraph">
-            <div class="header__paragraph header__paragraph_hours_box">
-              <p class="header__paragraph header__paragraph_hours_box">Hours:</p>
-              <p class="header__paragraph header__paragraph_hours_box">
-                Monday - Friday (10:00 - 19:00)
-              </p>
-              <p class="header__paragraph header__paragraph_hours_box">
-                Saturday - Sunday (11:00 - 18:00)
-              </p>
-            </div>
-            <div class="header__paragraph header__paragraph_address">
-              <p class="header__paragraph header__paragraph_hours_box">
-                200 Success Avenue, The Town of Practicum
-              </p>
-            </div>
+          <div class="header__column">
+            <p class="header__footer-paragraph">Hours:</p>
+            <p class="header__footer-paragraph">
+              Monday – Friday (10:00 – 19:00)
+            </p>
+            <p class="header__footer-paragraph">
+              Saturday – Sunday (11:00 – 18:00)
+            </p>
+          </div>
+          <div class="header__column">
+            <p class="header__footer-paragraph-right">
+              200 Success Avenue, The Town of Practicum
+            </p>
           </div>
         </div>
       </header>
+
       <main class="content">
-        <section id="nav__menu" class="menu"></section>
-        <section class="recipes">
+        <section id="recipes-page" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
-          <a id="nav__recipes"></a>
-          <p class="recipes__subtitle">
+          <h3 class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
             convenience:
-          </p>
+          </h3>
           <div class="recipes__videos">
-            <div class="recipes__videos recipes__videos_box1">
+            <div class="recipes__video">
               <iframe
                 class="recipes__iframe"
-                width="560"
-                height="315"
+                width="480"
+                height="273"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
-                title="YouTube video player"
+                title="The Ultimate AeroPress Technique (Episode #3)"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
-              <p class="recipes__video-caption">
-                <span>Aeropress recipe</span>
-                <span>~5:12 min</span>
-              </p>
+              <div class="recipes__video-caption">
+                <p>AeroPress</p>
+                <p>~5 min</p>
+              </div>
             </div>
-            <div class="recipes__videos recipes__videos_box2">
+
+            <div class="recipes__video">
               <iframe
                 class="recipes__iframe"
-                width="560"
-                height="315"
+                width="480"
+                height="273"
                 src="https://www.youtube.com/embed/st571DYYTR8"
-                title="YouTube video player"
+                title="The Ultimate French Press Technique"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
-              <p class="recipes__video-caption">
-                <span>French press recipe</span>
-                <span>~3:33 min</span>
-              </p>
+              <div class="recipes__video-caption">
+                <p>French press recipe</p>
+                <p>~15 min</p>
+              </div>
             </div>
           </div>
         </section>
-        <section id="nav__reservation" class="reservation"></section>
-        <section id="nav__about" class="about"></section>
-      </main>
+        <section id="reservation-page" class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <div class="reservation__form">
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="name">Name *</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  placeholder="Name Surname"
+                  required
+                />
+                <label class="form__label" for="number-of-guests"
+                  >Number of guests *</label
+                >
+                <input
+                  class="form__input"
+                  type="number"
+                  min="1"
+                  max="8"
+                  id="number-of-guests"
+                  placeholder="1-8"
+                  required
+                />
+                <label class="form__label" for="date-time">Date & time *</label>
+                <input
+                  class="form__input"
+                  type="datetime-local"
+                  id="date-time"
+                  required
+                />
+                <label class="form__label" for="email">Your email *</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <button class="form__button" type="submit">Book a table</button>
 
+                <div class="form__in-line">
+                  <input
+                    class="form__checkbox"
+                    type="checkbox"
+                    name="terms-of-use"
+                    id="terms-of-use"
+                    required
+                  />
+                  <label class="form__label" for="terms-of-use"
+                    >I agree with the terms of use</label
+                  >
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section id="menu-page" class="menu"></section>
+        <section id="contacts-page" class="about"></section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
